@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binge Math - app</title>
+<style>
+  :root { --accent:#187a6c; --ink:#0f2e29; --paper:#eef7f5; --soft:#dcf0ec; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input, textarea { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #9fd0c6; border-radius:6px; background:#fff; color:var(--ink); font-family:inherit; }
+  textarea { resize:vertical; min-height:3.4rem; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #9fd0c6; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  .sched p { margin:.2rem 0; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6fa89c; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Binge Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page plans a series watch with addition and calendar counting: the nights the episodes take against a nightly window, the total runtime, the night-by-night schedule, and the finish date. It uses no named constants. The episodes, their minutes, the nightly window and the start date are yours to enter from your own watchlist. It applies the counting as written, so it has not seen your shows, your evenings or your calendar and does not know whether the runtimes are real, the window will hold every night or something will pull you away, and it gives no verdict that a show is worth the hours or a nightly window is wise. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The watch</h2>
+    <p class="note">Episodes in order, split by spaces or commas. An episode longer than the window takes a night of its own.</p>
+    <label for="eps">Episode runtimes (minutes)</label><textarea id="eps">45 42 50 38 44 41 36 40</textarea>
+    <div class="row2">
+      <div><label for="win">Nightly window (minutes)</label><input id="win" type="text" value="90"></div>
+      <div><label for="start">Start date</label><input id="start" type="text" value="2026-10-24"></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>The nights truth</h2>
+    <p class="note">Nights: the episodes packed in order into the nightly window, with what the last night holds.</p>
+    <div class="out" id="n-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The total truth</h2>
+    <p class="note">Total: the runtimes added up, in minutes and in hours and minutes.</p>
+    <div class="out" id="t-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The schedule truth</h2>
+    <p class="note">Schedule: what each night holds, in episode order.</p>
+    <div class="out sched" id="s-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The finish truth</h2>
+    <p class="note">Finish: the start date plus the nights, one night a day.</p>
+    <div class="out" id="f-out"></div>
+  </div>
+
+  <footer>Binge Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const eps = document.getElementById("eps").value;
+    const win = document.getElementById("win").value;
+    const start = document.getElementById("start").value;
+    show("n-out", () => nightsTruth(win, eps));
+    show("t-out", () => totalTruth(eps));
+    const sOut = document.getElementById("s-out");
+    try {
+      const lines = scheduleTruth(win, eps);
+      sOut.classList.remove("err");
+      sOut.replaceChildren(...lines.map((s) => {
+        const p = document.createElement("p");
+        p.textContent = s;
+        return p;
+      }));
+    } catch (e) { sOut.textContent = e.message; sOut.classList.add("err"); }
+    show("f-out", () => finishTruth(start, win, eps));
+  }
+  document.querySelectorAll("input, textarea").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
