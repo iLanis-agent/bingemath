@@ -1,0 +1,1136 @@
+{
+ "cases": [
+  {
+   "fn": "nights",
+   "args": [
+    "90",
+    "45 42 50 38 44 41 36 40"
+   ],
+   "expect": "The 8 episodes at 90 minutes a night take 4 nights, the last night holding 76 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "45 42 50 38 44 41 36 40"
+   ],
+   "expect": "The 8 episodes run 336 minutes, 5 hours 36 minutes."
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "90",
+    "45 42 50 38 44 41 36 40"
+   ],
+   "expect": [
+    "Night 1: episodes 1 to 2, 87 minutes.",
+    "Night 2: episodes 3 to 4, 88 minutes.",
+    "Night 3: episodes 5 to 6, 85 minutes.",
+    "Night 4: episodes 7 to 8, 76 minutes."
+   ]
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2026-10-24",
+    "90",
+    "45 42 50 38 44 41 36 40"
+   ],
+   "expect": "Starting 2026-10-24, the last episode lands on 2026-10-27, a Tuesday."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "90",
+    "45"
+   ],
+   "expect": "The 1 episode at 90 minutes a night takes 1 night, the last night holding 45 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "45"
+   ],
+   "expect": "The 1 episode runs 45 minutes, 0 hours 45 minutes."
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "90",
+    "45"
+   ],
+   "expect": [
+    "Night 1: episode 1, 45 minutes."
+   ]
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2026-10-24",
+    "90",
+    "45"
+   ],
+   "expect": "Starting 2026-10-24, the last episode lands on 2026-10-24, a Saturday."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "45",
+    "45 42 50 38 44 41 36 40"
+   ],
+   "expect": "The 8 episodes at 45 minutes a night take 8 nights, the last night holding 40 minutes."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2026-12-31",
+    "600",
+    "1"
+   ],
+   "expect": "Starting 2026-12-31, the last episode lands on 2026-12-31, a Thursday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2024-02-28",
+    "1",
+    "1"
+   ],
+   "expect": "Starting 2024-02-28, the last episode lands on 2024-02-28, a Wednesday."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "600",
+    "600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600"
+   ],
+   "expect": "The 100 episodes at 600 minutes a night take 100 nights, the last night holding 600 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "1",
+    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+   ],
+   "expect": "The 100 episodes at 1 minute a night take 100 nights, the last night holding 1 minute."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "422",
+    "440 43 418 236 284 467 86 556 510"
+   ],
+   "expect": "The 9 episodes at 422 minutes a night take 9 nights, the last night holding 510 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "150",
+    "339 326 225 378 287 284"
+   ],
+   "expect": "The 6 episodes at 150 minutes a night take 6 nights, the last night holding 284 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "79",
+    "190 203 558 35 549 46 369 230 554 506 316"
+   ],
+   "expect": "The 11 episodes at 79 minutes a night take 11 nights, the last night holding 316 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "216",
+    "99 174 230 372 547 201 532 500 116 344"
+   ],
+   "expect": "The 10 episodes at 216 minutes a night take 10 nights, the last night holding 344 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "224",
+    "58 225 127 415 453 563 223 119 593 399 388"
+   ],
+   "expect": "The 11 episodes at 224 minutes a night take 11 nights, the last night holding 388 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "475",
+    "407 142 599 253 524 414 66 139 296 465 138 296 326 584 34 549 507"
+   ],
+   "expect": "The 17 episodes at 475 minutes a night take 15 nights, the last night holding 507 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "362",
+    "90 526 250 307 448 480 530 304 524 266 567 268 224 275 455 596"
+   ],
+   "expect": "The 16 episodes at 362 minutes a night take 16 nights, the last night holding 596 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "85",
+    "471 342 375 95 551 324 467 572 307 46 92 74 237 443"
+   ],
+   "expect": "The 14 episodes at 85 minutes a night take 14 nights, the last night holding 443 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "120",
+    "35 432 447 172"
+   ],
+   "expect": "The 4 episodes at 120 minutes a night take 4 nights, the last night holding 172 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "453",
+    "401 79 59 447 75 227 191 420 382 522 348 591 13 358 371 351 477 458 60 54"
+   ],
+   "expect": "The 20 episodes at 453 minutes a night take 16 nights, the last night holding 114 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "425",
+    "143 17 306 341 186 351 225 207 572 159 10 146 243 56"
+   ],
+   "expect": "The 14 episodes at 425 minutes a night take 10 nights, the last night holding 299 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "235",
+    "116 358 84 491 9 459 368 508 274 317 487 120 521 504 541"
+   ],
+   "expect": "The 15 episodes at 235 minutes a night take 15 nights, the last night holding 541 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "353",
+    "35 266 136 8 273 369 597 6 362 263 569 115"
+   ],
+   "expect": "The 12 episodes at 353 minutes a night take 10 nights, the last night holding 115 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "418",
+    "68 552 356 232 347 399 117 199 369 473 109 541 132 363 298 383"
+   ],
+   "expect": "The 16 episodes at 418 minutes a night take 15 nights, the last night holding 383 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "261",
+    "552 30 90"
+   ],
+   "expect": "The 3 episodes at 261 minutes a night take 2 nights, the last night holding 120 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "393",
+    "489 465 554 343 46 170 171 596 22 529 370 128 6 475 588"
+   ],
+   "expect": "The 15 episodes at 393 minutes a night take 12 nights, the last night holding 588 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "61",
+    "549 229 85 371 207"
+   ],
+   "expect": "The 5 episodes at 61 minutes a night take 5 nights, the last night holding 207 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "119",
+    "575 383 250 190 531 277 362 6 399 505 523 278 3 165 436 585 194 105 465"
+   ],
+   "expect": "The 19 episodes at 119 minutes a night take 19 nights, the last night holding 465 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "320",
+    "405 560 184 48 529 33"
+   ],
+   "expect": "The 6 episodes at 320 minutes a night take 5 nights, the last night holding 33 minutes."
+  },
+  {
+   "fn": "nights",
+   "args": [
+    "183",
+    "298 100 106 274 594 197 444 283 240 160 189"
+   ],
+   "expect": "The 11 episodes at 183 minutes a night take 11 nights, the last night holding 189 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "185 371 536 13 554 118 409 460 95"
+   ],
+   "expect": "The 9 episodes run 2741 minutes, 45 hours 41 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "386 417 158 330 137 474 395 356 291 501 222 524 396 179 19"
+   ],
+   "expect": "The 15 episodes run 4785 minutes, 79 hours 45 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "546 564 292 355 253 518 498 344 20 390 349 46 114 127 411 515 519 475 338 52 479"
+   ],
+   "expect": "The 21 episodes run 7205 minutes, 120 hours 5 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "7 591 190 328 508 383"
+   ],
+   "expect": "The 6 episodes run 2007 minutes, 33 hours 27 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "311 18 276 123 398 76 63 570 330 103 184 456 515 327 543 498 225 246"
+   ],
+   "expect": "The 18 episodes run 5262 minutes, 87 hours 42 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "568 209 162"
+   ],
+   "expect": "The 3 episodes run 939 minutes, 15 hours 39 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "68 439 389 94 174 597 19 506 394 276"
+   ],
+   "expect": "The 10 episodes run 2956 minutes, 49 hours 16 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "523 194 405 76 2 16 266 274 499 161 513 499 71 542 287 194 252 505 18 71 52 429 381 532 532 349 259 563 303"
+   ],
+   "expect": "The 29 episodes run 8768 minutes, 146 hours 8 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "364 366"
+   ],
+   "expect": "The 2 episodes run 730 minutes, 12 hours 10 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "272 208 487 547 61 17 229 19 214 377 272 20 505 531 248 531 215 110 458 532"
+   ],
+   "expect": "The 20 episodes run 5853 minutes, 97 hours 33 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "187 423 368 485 75 575 387 318 501"
+   ],
+   "expect": "The 9 episodes run 3319 minutes, 55 hours 19 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "448 259 333"
+   ],
+   "expect": "The 3 episodes run 1040 minutes, 17 hours 20 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "154 357 194 185 107 521 209 301 103 198 365"
+   ],
+   "expect": "The 11 episodes run 2694 minutes, 44 hours 54 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "248 388 142 289 104 263 480 373 522 443 229 265 366 456 401 543 422 16 336 429 251 364 274 15 510 346 527 511"
+   ],
+   "expect": "The 28 episodes run 9513 minutes, 158 hours 33 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "389 242 122 1 580 145 581 274 156 83 281 280 102 177 372 275 255 446 470 248 56"
+   ],
+   "expect": "The 21 episodes run 5535 minutes, 92 hours 15 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "220 135 223 111 499 433 79 154 300 84 569 291 158 384 420"
+   ],
+   "expect": "The 15 episodes run 4060 minutes, 67 hours 40 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "49 37 234 391 112 440 189 516 476 301 507 198"
+   ],
+   "expect": "The 12 episodes run 3450 minutes, 57 hours 30 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "598 30 255 553 538 307 86 515 213 540 169"
+   ],
+   "expect": "The 11 episodes run 3804 minutes, 63 hours 24 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "368 213 390 378 421 406 417 241 172 322 185 119 573 80 242 340"
+   ],
+   "expect": "The 16 episodes run 4867 minutes, 81 hours 7 minutes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "590 486 29 588 146 162 117 315 464 547 184 509 9 35"
+   ],
+   "expect": "The 14 episodes run 4181 minutes, 69 hours 41 minutes."
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "567",
+    "160 520 207 214 126 555 441 502 391 145"
+   ],
+   "expect": [
+    "Night 1: episode 1, 160 minutes.",
+    "Night 2: episode 2, 520 minutes.",
+    "Night 3: episodes 3 to 5, 547 minutes.",
+    "Night 4: episode 6, 555 minutes.",
+    "Night 5: episode 7, 441 minutes.",
+    "Night 6: episode 8, 502 minutes.",
+    "Night 7: episodes 9 to 10, 536 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "247",
+    "210 141"
+   ],
+   "expect": [
+    "Night 1: episode 1, 210 minutes.",
+    "Night 2: episode 2, 141 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "193",
+    "252 124 241 278 490 245 371 435 552 590 286 553 523"
+   ],
+   "expect": [
+    "Night 1: episode 1, 252 minutes.",
+    "Night 2: episode 2, 124 minutes.",
+    "Night 3: episode 3, 241 minutes.",
+    "Night 4: episode 4, 278 minutes.",
+    "Night 5: episode 5, 490 minutes.",
+    "Night 6: episode 6, 245 minutes.",
+    "Night 7: episode 7, 371 minutes.",
+    "Night 8: episode 8, 435 minutes.",
+    "Night 9: episode 9, 552 minutes.",
+    "Night 10: episode 10, 590 minutes.",
+    "Night 11: episode 11, 286 minutes.",
+    "Night 12: episode 12, 553 minutes.",
+    "Night 13: episode 13, 523 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "120",
+    "301 185 485"
+   ],
+   "expect": [
+    "Night 1: episode 1, 301 minutes.",
+    "Night 2: episode 2, 185 minutes.",
+    "Night 3: episode 3, 485 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "557",
+    "48 14 144 524 436 229 591 104 40 84 390"
+   ],
+   "expect": [
+    "Night 1: episodes 1 to 3, 206 minutes.",
+    "Night 2: episode 4, 524 minutes.",
+    "Night 3: episode 5, 436 minutes.",
+    "Night 4: episode 6, 229 minutes.",
+    "Night 5: episode 7, 591 minutes.",
+    "Night 6: episodes 8 to 10, 228 minutes.",
+    "Night 7: episode 11, 390 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "343",
+    "469 570 32 312 177 491 222 454 35"
+   ],
+   "expect": [
+    "Night 1: episode 1, 469 minutes.",
+    "Night 2: episode 2, 570 minutes.",
+    "Night 3: episode 3, 32 minutes.",
+    "Night 4: episode 4, 312 minutes.",
+    "Night 5: episode 5, 177 minutes.",
+    "Night 6: episode 6, 491 minutes.",
+    "Night 7: episode 7, 222 minutes.",
+    "Night 8: episode 8, 454 minutes.",
+    "Night 9: episode 9, 35 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "102",
+    "551 176 511 547 229 233 6 530 514 515 268 219 527"
+   ],
+   "expect": [
+    "Night 1: episode 1, 551 minutes.",
+    "Night 2: episode 2, 176 minutes.",
+    "Night 3: episode 3, 511 minutes.",
+    "Night 4: episode 4, 547 minutes.",
+    "Night 5: episode 5, 229 minutes.",
+    "Night 6: episode 6, 233 minutes.",
+    "Night 7: episode 7, 6 minutes.",
+    "Night 8: episode 8, 530 minutes.",
+    "Night 9: episode 9, 514 minutes.",
+    "Night 10: episode 10, 515 minutes.",
+    "Night 11: episode 11, 268 minutes.",
+    "Night 12: episode 12, 219 minutes.",
+    "Night 13: episode 13, 527 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "182",
+    "598 436 326 189 340"
+   ],
+   "expect": [
+    "Night 1: episode 1, 598 minutes.",
+    "Night 2: episode 2, 436 minutes.",
+    "Night 3: episode 3, 326 minutes.",
+    "Night 4: episode 4, 189 minutes.",
+    "Night 5: episode 5, 340 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "34",
+    "48 303 374 10 452 511 442 443"
+   ],
+   "expect": [
+    "Night 1: episode 1, 48 minutes.",
+    "Night 2: episode 2, 303 minutes.",
+    "Night 3: episode 3, 374 minutes.",
+    "Night 4: episode 4, 10 minutes.",
+    "Night 5: episode 5, 452 minutes.",
+    "Night 6: episode 6, 511 minutes.",
+    "Night 7: episode 7, 442 minutes.",
+    "Night 8: episode 8, 443 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "579",
+    "10 94 380 554 541 182 453 375 86 518 588 136 519"
+   ],
+   "expect": [
+    "Night 1: episodes 1 to 3, 484 minutes.",
+    "Night 2: episode 4, 554 minutes.",
+    "Night 3: episode 5, 541 minutes.",
+    "Night 4: episode 6, 182 minutes.",
+    "Night 5: episode 7, 453 minutes.",
+    "Night 6: episodes 8 to 9, 461 minutes.",
+    "Night 7: episode 10, 518 minutes.",
+    "Night 8: episode 11, 588 minutes.",
+    "Night 9: episode 12, 136 minutes.",
+    "Night 10: episode 13, 519 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "442",
+    "148 515 370 502 109 208 122 178 275"
+   ],
+   "expect": [
+    "Night 1: episode 1, 148 minutes.",
+    "Night 2: episode 2, 515 minutes.",
+    "Night 3: episode 3, 370 minutes.",
+    "Night 4: episode 4, 502 minutes.",
+    "Night 5: episodes 5 to 7, 439 minutes.",
+    "Night 6: episode 8, 178 minutes.",
+    "Night 7: episode 9, 275 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "208",
+    "195 300 97 388 193 273 440 467 525 212 194 108 164 566"
+   ],
+   "expect": [
+    "Night 1: episode 1, 195 minutes.",
+    "Night 2: episode 2, 300 minutes.",
+    "Night 3: episode 3, 97 minutes.",
+    "Night 4: episode 4, 388 minutes.",
+    "Night 5: episode 5, 193 minutes.",
+    "Night 6: episode 6, 273 minutes.",
+    "Night 7: episode 7, 440 minutes.",
+    "Night 8: episode 8, 467 minutes.",
+    "Night 9: episode 9, 525 minutes.",
+    "Night 10: episode 10, 212 minutes.",
+    "Night 11: episode 11, 194 minutes.",
+    "Night 12: episode 12, 108 minutes.",
+    "Night 13: episode 13, 164 minutes.",
+    "Night 14: episode 14, 566 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "361",
+    "511 92 171 319 403 425"
+   ],
+   "expect": [
+    "Night 1: episode 1, 511 minutes.",
+    "Night 2: episodes 2 to 3, 263 minutes.",
+    "Night 3: episode 4, 319 minutes.",
+    "Night 4: episode 5, 403 minutes.",
+    "Night 5: episode 6, 425 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "285",
+    "8 559 68 431 421 10 268 147 142 493 216"
+   ],
+   "expect": [
+    "Night 1: episode 1, 8 minutes.",
+    "Night 2: episode 2, 559 minutes.",
+    "Night 3: episode 3, 68 minutes.",
+    "Night 4: episode 4, 431 minutes.",
+    "Night 5: episode 5, 421 minutes.",
+    "Night 6: episodes 6 to 7, 278 minutes.",
+    "Night 7: episode 8, 147 minutes.",
+    "Night 8: episode 9, 142 minutes.",
+    "Night 9: episode 10, 493 minutes.",
+    "Night 10: episode 11, 216 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "527",
+    "22 164 233 188"
+   ],
+   "expect": [
+    "Night 1: episodes 1 to 3, 419 minutes.",
+    "Night 2: episode 4, 188 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "206",
+    "52 382 19 546 216"
+   ],
+   "expect": [
+    "Night 1: episode 1, 52 minutes.",
+    "Night 2: episode 2, 382 minutes.",
+    "Night 3: episode 3, 19 minutes.",
+    "Night 4: episode 4, 546 minutes.",
+    "Night 5: episode 5, 216 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "343",
+    "511 505 120 468 90"
+   ],
+   "expect": [
+    "Night 1: episode 1, 511 minutes.",
+    "Night 2: episode 2, 505 minutes.",
+    "Night 3: episode 3, 120 minutes.",
+    "Night 4: episode 4, 468 minutes.",
+    "Night 5: episode 5, 90 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "188",
+    "250 252 568 119"
+   ],
+   "expect": [
+    "Night 1: episode 1, 250 minutes.",
+    "Night 2: episode 2, 252 minutes.",
+    "Night 3: episode 3, 568 minutes.",
+    "Night 4: episode 4, 119 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "516",
+    "513 271 7 599 124 365 4 530 168 472 114 510 514 115"
+   ],
+   "expect": [
+    "Night 1: episode 1, 513 minutes.",
+    "Night 2: episodes 2 to 3, 278 minutes.",
+    "Night 3: episode 4, 599 minutes.",
+    "Night 4: episodes 5 to 7, 493 minutes.",
+    "Night 5: episode 8, 530 minutes.",
+    "Night 6: episode 9, 168 minutes.",
+    "Night 7: episode 10, 472 minutes.",
+    "Night 8: episode 11, 114 minutes.",
+    "Night 9: episode 12, 510 minutes.",
+    "Night 10: episode 13, 514 minutes.",
+    "Night 11: episode 14, 115 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "257",
+    "446 2 599 164"
+   ],
+   "expect": [
+    "Night 1: episode 1, 446 minutes.",
+    "Night 2: episode 2, 2 minutes.",
+    "Night 3: episode 3, 599 minutes.",
+    "Night 4: episode 4, 164 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "131",
+    "482 222 199 251 417 356 52"
+   ],
+   "expect": [
+    "Night 1: episode 1, 482 minutes.",
+    "Night 2: episode 2, 222 minutes.",
+    "Night 3: episode 3, 199 minutes.",
+    "Night 4: episode 4, 251 minutes.",
+    "Night 5: episode 5, 417 minutes.",
+    "Night 6: episode 6, 356 minutes.",
+    "Night 7: episode 7, 52 minutes."
+   ]
+  },
+  {
+   "fn": "schedule",
+   "args": [
+    "559",
+    "506 51 64 557 32 286 151 473 338 279 305 202"
+   ],
+   "expect": [
+    "Night 1: episodes 1 to 2, 557 minutes.",
+    "Night 2: episode 3, 64 minutes.",
+    "Night 3: episode 4, 557 minutes.",
+    "Night 4: episodes 5 to 7, 469 minutes.",
+    "Night 5: episode 8, 473 minutes.",
+    "Night 6: episode 9, 338 minutes.",
+    "Night 7: episode 10, 279 minutes.",
+    "Night 8: episodes 11 to 12, 507 minutes."
+   ]
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2050-11-02",
+    "340",
+    "328 420 124 584 245 514 559 411"
+   ],
+   "expect": "Starting 2050-11-02, the last episode lands on 2050-11-09, a Wednesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2053-05-19",
+    "471",
+    "315 42 356 331 222 155 535"
+   ],
+   "expect": "Starting 2053-05-19, the last episode lands on 2053-05-23, a Friday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2034-05-25",
+    "127",
+    "130 259"
+   ],
+   "expect": "Starting 2034-05-25, the last episode lands on 2034-05-26, a Friday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2005-04-12",
+    "293",
+    "75 555 485 229 523 290"
+   ],
+   "expect": "Starting 2005-04-12, the last episode lands on 2005-04-17, a Sunday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2025-01-28",
+    "379",
+    "503 105 296 294 334 595 373 459 282"
+   ],
+   "expect": "Starting 2025-01-28, the last episode lands on 2025-02-05, a Wednesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2063-11-23",
+    "188",
+    "137 226 411 138 194"
+   ],
+   "expect": "Starting 2063-11-23, the last episode lands on 2063-11-27, a Tuesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2021-03-26",
+    "262",
+    "173 554 283 451 350 149 532 217 44"
+   ],
+   "expect": "Starting 2021-03-26, the last episode lands on 2021-04-02, a Friday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2000-05-07",
+    "548",
+    "25 573 58 94"
+   ],
+   "expect": "Starting 2000-05-07, the last episode lands on 2000-05-09, a Tuesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2020-09-20",
+    "290",
+    "185 274 289 109 195 339 14"
+   ],
+   "expect": "Starting 2020-09-20, the last episode lands on 2020-09-26, a Saturday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2033-06-07",
+    "390",
+    "97"
+   ],
+   "expect": "Starting 2033-06-07, the last episode lands on 2033-06-07, a Tuesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2016-05-22",
+    "332",
+    "80 345 225 498 79 540 37 139 39"
+   ],
+   "expect": "Starting 2016-05-22, the last episode lands on 2016-05-28, a Saturday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2098-07-08",
+    "496",
+    "499 282 417 485 362 151"
+   ],
+   "expect": "Starting 2098-07-08, the last episode lands on 2098-07-13, a Sunday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2018-03-26",
+    "256",
+    "318 484 373 56 396 119 209 102 389"
+   ],
+   "expect": "Starting 2018-03-26, the last episode lands on 2018-04-03, a Tuesday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2015-12-11",
+    "429",
+    "496 526 457 421"
+   ],
+   "expect": "Starting 2015-12-11, the last episode lands on 2015-12-14, a Monday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2052-01-04",
+    "240",
+    "562 309 415"
+   ],
+   "expect": "Starting 2052-01-04, the last episode lands on 2052-01-06, a Saturday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2027-07-22",
+    "440",
+    "177 521 435 532 579 314 252 176 225"
+   ],
+   "expect": "Starting 2027-07-22, the last episode lands on 2027-07-29, a Thursday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2087-10-13",
+    "256",
+    "375"
+   ],
+   "expect": "Starting 2087-10-13, the last episode lands on 2087-10-13, a Monday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2093-10-09",
+    "140",
+    "472 546 27 29 64 492 316 149 45"
+   ],
+   "expect": "Starting 2093-10-09, the last episode lands on 2093-10-15, a Thursday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2014-10-12",
+    "35",
+    "203 307"
+   ],
+   "expect": "Starting 2014-10-12, the last episode lands on 2014-10-13, a Monday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2089-05-28",
+    "47",
+    "280 560 123 234 547 404 137"
+   ],
+   "expect": "Starting 2089-05-28, the last episode lands on 2089-06-03, a Friday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2028-03-10",
+    "397",
+    "3 367 399 321 333 172 451 351 8 247"
+   ],
+   "expect": "Starting 2028-03-10, the last episode lands on 2028-03-17, a Friday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2098-01-11",
+    "49",
+    "107 227 95 478 498 333 147 312"
+   ],
+   "expect": "Starting 2098-01-11, the last episode lands on 2098-01-18, a Saturday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2015-03-13",
+    "176",
+    "378 266 206 252 143 591 459 445 477"
+   ],
+   "expect": "Starting 2015-03-13, the last episode lands on 2015-03-21, a Saturday."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2048-10-22",
+    "290",
+    "366 17 185 378 524 203 392 269"
+   ],
+   "expect": "Starting 2048-10-22, the last episode lands on 2048-10-28, a Wednesday."
+  }
+ ],
+ "errors": [
+  [
+   "nights",
+   [
+    "0",
+    "45"
+   ]
+  ],
+  [
+   "nights",
+   [
+    "601",
+    "45"
+   ]
+  ],
+  [
+   "nights",
+   [
+    "2.5",
+    "45"
+   ]
+  ],
+  [
+   "nights",
+   [
+    "90",
+    ""
+   ]
+  ],
+  [
+   "nights",
+   [
+    "90",
+    "0"
+   ]
+  ],
+  [
+   "nights",
+   [
+    "90",
+    "601"
+   ]
+  ],
+  [
+   "nights",
+   [
+    "90",
+    "45 2.5"
+   ]
+  ],
+  [
+   "total",
+   [
+    ""
+   ]
+  ],
+  [
+   "total",
+   [
+    "609"
+   ]
+  ],
+  [
+   "total",
+   [
+    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 "
+   ]
+  ],
+  [
+   "schedule",
+   [
+    "90",
+    "abc"
+   ]
+  ],
+  [
+   "schedule",
+   [
+    "0",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "2026-13-01",
+    "90",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "2026-02-30",
+    "90",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "1999-01-01",
+    "90",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "2101-01-01",
+    "90",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "24-10-2026",
+    "90",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "2026-10-24",
+    "601",
+    "45"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "2026-10-24",
+    "90",
+    ""
+   ]
+  ],
+  [
+   "schedule",
+   [
+    "90",
+    "-45"
+   ]
+  ]
+ ]
+}
